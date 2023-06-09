@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suas leituras</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">&#128218 Suas leituras</a>
+            <nav class="nav">
+                <a href="#" class="nav-btn">Contato</a>
+                <a href="#" class="nav-btn">Logar</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-title">
+            <a href="#" id="openModalButton">
+                <h1>+ Adicionar livro</h1>
+            </a>
+        </div>
+
+        <div id="fade" class="hide"></div>
+
+        <div id="modal" class="hide">
+            <input type="text" name="title" id="title" placeholder="Título" required>
+            <input type="text" name="author" id="author" placeholder="Author" required>
+            <input type="number" name="pages" id="pages" placeholder="Páginas" required>
+            <div class="div-read">
+                <label for="check-read">Você leu?</label>
+                <input type="checkbox" name="check-read" id="check-read" required>
+            </div>
+            <button id="btn-add">Adicionar</button>
+        </div>
+
+        <div id="allCards">
+
+
+        </div>
+    </main>
+</body>
+
+</html>
